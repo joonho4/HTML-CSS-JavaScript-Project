@@ -42,7 +42,7 @@ header{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 14rem;
+    width: 30vh;
     height: 89rem;
     background-color: rgba(255, 0, 0, 0.6);
     position: fixed;
@@ -57,14 +57,14 @@ header{
   height: 44px;
 }
 li{
-  margin-left: 15px;
+  margin-left: -15px;
   list-style: upper-roman;
   display: inline;
 }
 .main{
     padding-top: 10px;
     margin-top: 170px;
-    margin-left: 160px;
+    margin-left: 30vh;
     background-color: cornsilk;
     height: 1000vh;
     position: relative;
