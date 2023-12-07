@@ -1,5 +1,4 @@
 body *{
-    overflow: hidden;
     box-sizing: border-box;
 }
 body{
@@ -33,16 +32,9 @@ header{
   top: 11px;
 }
 .aside{
-    overflow-x: visible;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: absolute;
     margin-top: 170px;
-    left: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 30vh;
+    width: 37vh;
     height: 89rem;
     background-color: rgba(255, 0, 0, 0.6);
     position: fixed;
@@ -57,19 +49,31 @@ header{
   height: 44px;
 }
 li{
-  margin-left: -15px;
-  list-style: upper-roman;
-  display: inline;
+  margin-left: -2px;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  list-style-type: upper-roman;
+  display: list-item;
 }
 .main{
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
     margin-top: 170px;
-    margin-left: 30vh;
+    margin-left: 37vh;
     background-color: cornsilk;
     height: 1000vh;
     position: relative;
     transform-origin: 0 0;
     transform: rotate(0.001deg) scale(1, 1);
+}
+.main .main-title{
+    font-size: 30pt large;
+    
+}
+.main .detail{
+    font-size: larger;
+    width: 50%;
 }
 @media screen and (max-width : 900px){
   .aside{
@@ -79,8 +83,12 @@ li{
     width: 100%;
     margin-left: 0;
   }
+  .main .detail{
+    width: 30%;
+  }
   .title{
     margin-left: 10%;
     margin-top: 3.5%;
   }
+  
 }
