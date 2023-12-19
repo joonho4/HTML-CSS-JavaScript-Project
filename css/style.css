@@ -1,5 +1,7 @@
 body *{
     box-sizing: border-box;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 25px;
 }
 body{
   margin: 0;
@@ -22,16 +24,29 @@ header{
   left: 0px;
   top: 0px;
   z-index: 100;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+img{
+  height: auto;
 }
 .privacy{
   color: #e26969;
   text-align: left;
   font: 400 36px "Inter-Regular", sans-serif;
   position: absolute;
-  left: 35px;
-  top: 11px;
+  top: 0;
+  left: 0;
 }
-.aside{
+.center-content{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+aside{
     margin-top: 170px;
     box-sizing: border-box;
     width: 37vh;
@@ -39,14 +54,19 @@ header{
     background-color: rgba(255, 0, 0, 0.6);
     position: fixed;
 }
+a{
+  text-decoration-line: none;
+}
 .title{
   color: #000000;
   text-align: left;
   font: 600 30px "Inter-SemiBold", sans-serif;
-  margin-top: 5.4vh;
-  margin-left: 25%;
+  margin-top: 2vh;
+  margin-left: 20%;
   width: 600px;
   height: 44px;
+  margin-right: 35px;
+  
 }
 li{
   margin-left: -2px;
@@ -62,10 +82,11 @@ li{
     margin-top: 170px;
     margin-left: 37vh;
     background-color: cornsilk;
-    height: 1000vh;
+    height: 1000px;
     position: relative;
     transform-origin: 0 0;
     transform: rotate(0.001deg) scale(1, 1);
+    overflow: auto;
 }
 .main .main-title{
     font-size: 30pt large;
@@ -74,9 +95,10 @@ li{
 .main .detail{
     font-size: larger;
     width: 50%;
+    height: 1000px;
 }
 @media screen and (max-width : 900px){
-  .aside{
+  aside{
     display: none;
   }
   .main{
@@ -85,10 +107,13 @@ li{
   }
   .main .detail{
     width: 30%;
+    height: 1500px;
   }
   .title{
-    margin-left: 10%;
+    margin-left: -100vh;
     margin-top: 3.5%;
   }
-  
+  img{
+    display: none;
+  }
 }
